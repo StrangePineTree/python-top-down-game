@@ -70,7 +70,7 @@ class Sheep:
 #numbers in list represent xpos, ypos, direction moving, and whether it's been caught or not!
 sheeplist: list[Sheep] = []
 #make more sheeps here!
-for x in range (1015):
+for x in range (24):
     sheeplist.append(Sheep(random.randrange(100,700),random.randrange(100,700)))
     sheepNumber+=1
 
@@ -175,6 +175,6 @@ else:
     screen.blit(text3, (400,400))
     screen.blit(text4, (640,400))
 pygame.display.flip()
-pygame.time.wait(500)#pause for a bit before ending
+pygame.time.wait(750)#pause for a bit before ending
 
 pygame.quit()
